@@ -1,0 +1,25 @@
+homework: false
+my:
+  custom:
+    property: Hello from application properties
+
+---
+spring:
+  config:
+    activate:
+      on-profile: jaz
+my:
+  custom:
+    property: Hello from JAZ application properties
+    random: Some random value
+
+---
+spring:
+  config:
+    activate:
+      on-profile: homework
+my:
+  custom:
+    property: Hello from homework application properties
+    random: Some random value
+homework: true
