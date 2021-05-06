@@ -18,17 +18,17 @@ public class Homework4RestController {
         return ResponseEntity.ok(someValue);
     }
 
-    @PutMapping("/request/someValue")
+    @PutMapping("/put_request")
     public ResponseEntity<String> putRequestBody(@RequestBody String someValue){
         return ResponseEntity.ok(someValue);
     }
 
-    @PutMapping("/path/{someValue}")
+    @PutMapping("/path_request/{someValue}")
     public ResponseEntity<String> putPathVariable(@PathVariable String someValue){
         return ResponseEntity.ok(someValue);
     }
 
-    @PostMapping("/someValue")
+    @PostMapping("/post")
     public ResponseEntity<String> postRequestBody(@RequestBody String someValue){
         return ResponseEntity.ok(someValue);
     }
