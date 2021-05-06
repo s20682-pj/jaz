@@ -23,7 +23,7 @@ public class Homework4RestController {
         return ResponseEntity.ok(someValue);
     }
 
-    @PutMapping("/path_request/{someValue}")
+    @PutMapping("/put_path/{someValue}")
     public ResponseEntity<String> putPathVariable(@PathVariable String someValue){
         return ResponseEntity.ok(someValue);
     }
